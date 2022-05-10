@@ -1,0 +1,774 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300&family=Josefin+Sans:wght@200;300&display=swap');
+/* GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+main{
+    margin-bottom: 30px;
+}
+/* INICIO */
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #F39C12;
+    background-image: url(../resources/fondosushi.jpg);
+    background-position: center;
+    background-size: cover;
+    .container-title{
+        padding-top: 130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-size: 100px;
+            color: #fff;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 300;
+            border: solid 2px #fff;
+            padding: 0px 25px;
+        }
+    }
+    .container-link{
+        margin-top: 80px;
+        background-color: #fe7d00;
+        border: none;
+        justify-content: center;
+        transform: scale(1, 1);
+        transition: transform 0.5s ease;
+    }
+    .container-link:hover{
+        transform: scale(1.2, 1.2);
+    }
+    .container-link i{
+        font-size: 40px;
+        color: #fff;
+        padding: 15px 45px;
+    }
+}
+/* CARTAS */
+main section .title2{
+    font-size: 50px;
+    text-align: center;
+    padding: 20px 0px;
+    text-decoration: underline 3px #fe7d00;
+}
+.letters{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    .letter{
+        width: 280px;
+        height: 394px;
+        border: solid 0.3px #000;
+        border-radius: 5px;
+        img{
+            width: 100%;
+            padding: 25px;
+            border-bottom: solid #000 0.3px;
+        }
+        .items{
+            text-align: center;
+            h3{
+                padding: 10px;
+            }
+            p{
+                padding-bottom: 18px;
+                font-weight: bold;
+            }
+            a{
+                text-decoration: none;
+                color: #000;
+                border: #000 solid 0.2px;
+                padding: 6px;
+                border-radius: 3px;
+                font-weight: bold;
+            }
+            a:hover{
+                color: #fff;
+                background-color: #fe7d00;
+                transition: 0.2s;
+                border: none;
+            }
+        }
+    }
+}
+/* PASOS */
+main section .title3{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 45px;
+    text-decoration: underline 3px #fe7d00;
+}
+.steps{
+    width: 80%;
+    margin: 15px auto;
+    .step{
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+        margin-bottom: 0.5rem;
+        img{
+            width: 18rem;
+            height: 15rem;
+        }
+        h3{
+            font-size: 20px;
+            padding: 10px;
+        }
+        p{
+            font-weight: bold;
+        }
+    }
+    .step2{
+        flex-direction: row-reverse;
+        margin-bottom: 2rem;
+    }
+}
+/* NOSOTROS */
+.aboutus {
+    background-color: rgb(33, 53, 107);
+    height: 85px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .texts2 {
+        font-size: 20px;
+        color: #fff;
+        h3 {
+            padding-bottom: 8px;
+        }
+    }
+    .links a {
+        color: #fff;
+        background-color: #162652;
+        padding: 8px 7px 5px 7px;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    main {
+        margin-bottom: 0;
+    }
+
+    /* INICIO */
+    .container .container-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .container-title h1 {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        font-size: 3.6rem;
+        color: #fff;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 300;
+        border: solid 2px #fff;
+    }
+    .container .container-link {
+        margin-top: 3rem;
+        background-color: #fe7d00;
+        border: none;
+        justify-content: center;
+    }
+    .container .container-link i {
+        font-size: 2rem;
+        color: #fff;
+        padding: 1rem 2.8rem;
+    }
+
+    /* CARTAS */
+    main section .title2 {
+        font-size: 2rem;
+        text-align: center;
+        padding: 20px 0px;
+        text-decoration: underline 0.2rem #fe7d00;
+    }
+    .letters {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* PASOS */
+    main section .title3 {
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 1rem;
+        text-decoration: underline 0.2rem #fe7d00;
+    }
+    .steps {
+        width: 80%;
+        margin: 1rem auto;
+    }
+    .step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        margin-bottom: 1.5rem;
+    }
+    .step img {
+        width: 100%;
+    }
+    .step h3 {
+        font-size: 1,5rem;
+        padding: 1rem;
+        text-align: center;
+    }
+    .step p {
+        font-weight: bold;
+        text-align: center;
+    }
+    .step2 {
+        flex-direction: column;
+    }
+
+    /* NOSOTROS */
+    footer .aboutus {
+        background-color: #21356b;
+        height: 7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .aboutus .texts2 {
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 621px) {
+    .container{
+        align-items: center;
+    }
+    .container .container-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4.5rem;
+    }
+    .container .container-title h1 {
+        width: 95%;
+        margin: auto;
+        text-align: center;
+        font-size: 6.2rem;
+        color: #fff;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 300;
+        border: solid 2px #fff;
+        padding: 0;
+    }
+    .letters {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 899px) {
+    .container .container-title {
+        padding-top: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .container-title h1 {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        font-size: 5.4rem;
+        color: #fff;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 300;
+        border: solid 2px #fff;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container .container-title {
+        padding-top: 12rem;
+    }
+}
+
+/* PAGINA 2 */
+.pag2 {
+    padding: 30px;
+    background-color: #162652;
+    .title {
+        font-size: 80px;
+        color: #fff;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 300;
+        border: solid 2px #fff;
+        padding: 0px 25px;
+        text-align: center;
+    }
+}
+.main2 {
+    margin-bottom: 2.5rem;
+    .menu h2 {
+        font-size: 35px;
+        text-align: center;
+        margin-top: 40px;
+        text-decoration: underline 3px #fe7d00;
+    }
+}
+
+/* GRID DIA */
+.grid-menu {
+    width: 90%;
+    margin: 25px auto 0px;
+    display: grid;
+    height: 500px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 15px;
+    row-gap: 12px;
+}
+.nigiri {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-image: url(../resources/nigirisushi.jpg);
+    background-position: 0px -100px;
+    background-size: cover;
+}
+.ramen {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background: url(../resources/ramen.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.bebida {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background: url(../resources/bebidas.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.salsa {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background: url(../resources/salsasushi.jpg);
+    background-position: 0px -110px;
+    background-size: cover;
+}
+.nigiri, .ramen, .bebida, .salsa {
+    transform: scale(1, 1);
+    transition: transform 0.3s ease; 
+}
+.nigiri:hover, .ramen:hover, .bebida:hover, .salsa:hover {
+    transform: scale(1.03, 1.03);
+}
+.img{
+    border-radius: 10px;
+}
+
+/* GID VEGANO */
+.grid-vegano {
+    width: 90%;
+    margin: 25px auto 0px;
+    display: grid;
+    height: 500px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 15px;
+    row-gap: 12px;
+}
+.fc1{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-image: url(../resources/vegano3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.fc2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-image: url(../resources/vegano1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.fc3{
+    grid-column: 3/5;
+    grid-row: 1/3;
+    background-image: url(../resources/vegano2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.fc4{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-image: url(../resources/vegano4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.fc5{
+    grid-column: 2/3;
+    grid-row: 2/4;
+    background-image: url(../resources/vegano5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.fc6{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background-image: url(../resources/vegano6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.fc7{
+    grid-column: 4/5;
+    grid-row: 3/4;
+    background-image: url(../resources/vegano7.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.fc1, .fc2, .fc3, .fc4, .fc5, .fc6, .fc7 {
+    transform: scale(1, 1);
+    transition: transform 0.3s ease; 
+}
+.fc1:hover, .fc2:hover, .fc3:hover, .fc4:hover, .fc5:hover, .fc6:hover, .fc7:hover {
+    transform: scale(1.03, 1.03);
+}
+
+/* GRID NIÑO */
+.grid-niños {
+    width: 90%;
+    margin: 25px auto 0px;
+    display: grid;
+    height: 500px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 15px;
+    row-gap: 12px;
+}
+.gn1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-image: url(../resources/niños4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.gn2 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    background-image: url(../resources/niños2.jpg);
+    background-position: center;
+    background-size: cover;
+} 
+.gn3 {
+    grid-column: 4/5;
+    grid-row: 1/3;
+    background-image: url(../resources/niños1.jpg);
+    background-position: center;
+    background-size: cover;
+} 
+.gn4 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background-image: url(../resources/niños3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.gn1, .gn2, .gn3, .gn4 {
+    transform: scale(1, 1);
+    transition: transform 0.3s ease; 
+}
+.gn1:hover, .gn2:hover, .gn3:hover, .gn4:hover {
+    transform: scale(1.03, 1.03);
+}
+
+@media only screen and (min-width: 320px) {
+    .main2 {
+        margin-bottom: 1rem;
+    }
+    .pag2 {
+        padding: 1.5rem;
+    }
+    .menu h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+    .pag2 .title {
+        font-size: 3.5rem;
+        padding: 0;
+    }
+    
+    .grid-menu {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        column-gap: 1rem;
+        row-gap: .8rem;
+    }
+    .nigiri {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-position: center;
+    }
+    .ramen {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .bebida {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .salsa {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        background-position: center;
+    }
+    .img{
+        border-radius: 0.6rem;
+    }
+
+    .grid-vegano {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+    }
+    .fc1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .fc2{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .fc3{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .fc4{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .fc5{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    .fc6{
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    .fc7{
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+
+    .grid-niños {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .gn1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .gn2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    } 
+    .gn3 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    } 
+    .gn4 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .main2 {
+        margin-bottom: 1rem;
+    }
+    .pag2 {
+        padding: 1.5rem;
+    }
+    
+    .pag2 .title {
+        font-size: 3.5rem;
+        padding: 0;
+    }
+    
+    .grid-menu {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .nigiri {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .ramen {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .bebida {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .salsa {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .grid-vegano {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .fc1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .fc2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .fc3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .fc4{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .fc5{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .fc6{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .fc7{
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+
+    .grid-niños {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .gn1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .gn2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    } 
+    .gn3 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    } 
+    .gn4 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .grid-menu {
+        width: 90%;
+        margin: 1.5rem auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .nigiri {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        background-position: center;
+    }
+    .ramen {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .bebida {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .salsa {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        background-position: center;
+    }
+
+    .grid-vegano {
+        margin: 1.5rem auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .fc1{
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    .fc2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .fc3{
+        grid-column: 3/5;
+        grid-row: 1/3;
+    }
+    .fc4{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .fc5{
+        grid-column: 2/3;
+        grid-row: 2/4;
+    }
+    .fc6{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    .fc7{
+        grid-column: 4/5;
+        grid-row: 3/4;
+    }
+    
+    .grid-niños {
+        margin: 1.5rem auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .gn1 {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    .gn2 {
+        grid-column: 2/4;
+        grid-row: 1/2;
+    } 
+    .gn3 {
+        grid-column: 4/5;
+        grid-row: 1/3;
+    } 
+    .gn4 {
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+}
